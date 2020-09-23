@@ -1,32 +1,54 @@
 <template>
-  <div>
-    <Home v-if="true" />
-    <List v-else />
-  </div>
+  <el-container id="app">
+    <el-header class="el-header">
+      <Header />
+    </el-header>
+    <el-main class="el-main">
+      123123
+    </el-main>
+    <el-footer class="el-footer">
+      <Footer />
+    </el-footer>
+  </el-container>
 </template>
 
 <script>
-import Home from "./pages/Home";
-import List from "./pages/List";
+import Footer from "./Footer";
+import Header from "./Header";
+
 export default {
   name: "app",
   components: {
-    Home,
-    List
+    Footer,
+    Header
   }
 };
 </script>
 
-<style>
-body {
+<style global lang="scss">
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body,
+html,
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .el-header {
+    padding: 0;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .el-footer {
+    padding: 0;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .el-main {
+    padding: 0;
+  }
 }
 </style>

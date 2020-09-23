@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 .box {
   background: #212832;
-  height: 60px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;

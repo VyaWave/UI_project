@@ -3,18 +3,6 @@
     <HeaderPc />
     <HeaderPhone />
 
-    <v-card class="card" max-width="344" default>
-      <div>
-        <span class="number">
-          111
-        </span>
-        <span class="desc">
-          121212
-        </span>
-      </div>
-
-      <img src="../assets/img_coin.png" />
-    </v-card>
   </div>
 </template>
 

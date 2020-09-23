@@ -2,8 +2,13 @@
   <div class="header">
     <div class="content">
       <img class="logo" src="../assets/logo.png" alt="">
-      <div>账户</div>
       <div>
+        <el-input placeholder="请输入内容" v-model="input1">
+          <template slot="prepend">账号</template>
+          <el-button slot="append" icon="el-icon-search"></el-button>
+        </el-input>
+      </div>
+      <div class="right">
         <img class="language" src="../assets/icon_laug.png" alt="">
         <span class="text">语言</span>
       </div>
@@ -28,7 +33,7 @@ export default {};
     display: flex;
     justify-content: space-between;
     align-items: center;
-    div {
+    .right {
       display: flex;
       align-items: center;
     }
@@ -48,5 +53,10 @@ export default {};
     color: #f5f6fa;
     margin-left: 15px;
   }
+}
+</style>
+<style lang="scss">
+.header .el-input-group__append button.el-button {
+  background-color: #ffc421;
 }
 </style>

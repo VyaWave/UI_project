@@ -1,8 +1,6 @@
 <template>
   <div>
-    home
-
-    <v-card class="card" max-width="344" default>
+    <el-card class="box-card">
       <div>
         <span class="number">
           111
@@ -13,7 +11,7 @@
       </div>
 
       <img src="../assets/img_coin@2x.png" />
-    </v-card>
+    </el-card>
   </div>
 </template>
 

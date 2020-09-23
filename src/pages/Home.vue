@@ -1,6 +1,7 @@
 <template>
   <div>
-    home
+    <HeaderPc />
+    <HeaderPhone />
 
     <v-card class="card" max-width="344" default>
       <div>
@@ -12,13 +13,27 @@
         </span>
       </div>
 
-      <img src="../assets/img_coin@2x.png" />
+      <img src="../assets/img_coin.png" />
     </v-card>
   </div>
 </template>
 
 <script>
-export default {};
+import HeaderPc from "../components/header_pc";
+import HeaderPhone from "../components/header_phone";
+
+export default {
+  name: "home",
+
+  components: {
+    HeaderPc,
+    HeaderPhone
+  },
+
+  data: () => ({
+    //
+  })
+};
 </script>
 
 <style lang="scss" scoped>
